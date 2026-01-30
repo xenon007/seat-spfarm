@@ -1,0 +1,30 @@
+{
+    "name": "xenon007/seat-spfarm",
+    "description": "SP Farming plugin for SeAT to monitor skillpoint farming characters and minimise training downtime.",
+    "version": "1.0.0",
+    "type": "seat-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Xenon007",
+            "email": "dev@example.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "illuminate/support": "^10.0",
+        "seat/web": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xenon007\\SeatSpfarm\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xenon007\\SeatSpfarm\\Providers\\SeatSpfarmServiceProvider"
+            ]
+        }
+    }
+}
